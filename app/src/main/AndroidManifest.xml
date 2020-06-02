@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.IssueNoteActivity" />
+        <activity android:name=".activity.NoteContentActivity" />
+        <activity android:name=".activity.MyNoteActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.NewsContentActivity" />
+        <activity android:name=".activity.ContactMeActivity" />
+        <activity android:name=".activity.AboutAppActivity" />
+        <activity android:name=".activity.WriteInfoActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.ChoosePayStateActivity" />
+        <activity android:name=".activity.MyShopCarActivity" />
+        <activity android:name=".fragment.fragmentThings" />
+        <activity android:name=".fragment.fragmentNote" />
+        <activity android:name=".fragment.fragmentCar" />
+        <activity
+            android:name=".com.wyxin.activity.GuideActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".activity.MyInfoActivity" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.myapplication.BmobContentProvider"></provider>
+    </application>
+</manifest>

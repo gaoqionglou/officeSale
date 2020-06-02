@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/main_things"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="物品"
+            android:textSize="12sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb"
+            android:button="@null"
+            android:drawableTop="@drawable/main_message"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="留言"
+            android:textSize="12sp" />
+        
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb"
+            android:button="@null"
+            android:drawableTop="@drawable/main_notice"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="购物车"
+            android:textSize="12sp" />
+        
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb"
+            android:button="@null"
+            android:drawableTop="@drawable/main_mine"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="我的"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>
