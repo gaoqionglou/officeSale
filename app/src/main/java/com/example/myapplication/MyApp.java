@@ -11,7 +11,6 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         // 创建bmob数据库的唯一标识码，在bmob数据库的设置里面可以看到
-        Bmob.initialize(this, "38127bee7eab45f1032c3479842ff2a9");
         BmobConfig config = new BmobConfig.Builder(this)
                 //设置appkey
                 .setApplicationId("38127bee7eab45f1032c3479842ff2a9")
